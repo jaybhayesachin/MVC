@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace MVC_R.Controllers
+{
+    public class first_mvcController : Controller
+    {
+        // GET: first_mvc
+        public string  EmployeeProfile (int id)
+        {
+            string Profile = string.Empty;
+
+            if (id == 1)
+            {
+                Profile = "Employee 1 profile";
+
+            }
+            else if (id == 2)
+            {
+                Profile = "employee 2 profile";
+
+            }
+            else
+            {
+                Profile = "no record found";
+
+            }
+            return Profile;
+        }
+        
+    }
+}
